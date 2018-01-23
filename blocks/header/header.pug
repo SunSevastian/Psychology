@@ -1,0 +1,21 @@
+include ../gamburger/gamburger.pug
+include ../swipe/swipe.pug
+include ../social/social.pug
+
+mixin header()
+  +b.DIV.header
+    .container-fluid
+      .row
+        +e.DIV.gamburger
+          block gamburger
+            +gamburger()
+        +e.DIV.social
+          block social
+            +social()
+      .row
+        +e.DIV.gamburger
+          block gamburger
+            +gamburger()
+        +e.DIV.swipe
+          block swipe
+            +swipe()

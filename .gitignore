@@ -1,2 +1,4 @@
 #Ignore tmp
 tmp/
+example/
+node_modules/
