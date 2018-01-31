@@ -1,8 +1,5 @@
 .swipe
-  &__container
-    display: inline-block
   &-item
-    color: $main-color-header
     display: flex
     align-items: center
     margin-bottom: 14px
@@ -13,8 +10,16 @@
       height: 16px
       border: solid 4px $main-color-header
       margin-right: 38px
-    &__icon.active
+    &__text
+      color: $main-color-header
+      margin-bottom: 0
+      display: none
+  &-item.active
+    .swipe-item__icon
+      color: red
       width: 40px
       height: 2px
       border: solid 2px $main-color-header
       margin-right: 12px
+    .swipe-item__text
+      display: block

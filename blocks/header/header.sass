@@ -1,11 +1,14 @@
 .header
-  .container-fluid
+  &__container-fluid
     display: flex
     flex-direction: column
     justify-content: space-between
     height: 100vh
     background-image: radial-gradient(circle at 0 0, #e3a8a0, #ae8d9c 11%, #6c7a90 41%, #3b5a7b 80%, #2a4f73 94%, #2a4f73)
     mix-blend-mode: multiply
-  .row
+    padding: 20px 20px 0px 20px
+  &__row
     display: flex
     justify-content: space-between
+  &__row.logoCenter
+    justify-content: center

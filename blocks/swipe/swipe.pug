@@ -1,19 +1,44 @@
 mixin swipe()
   +b.DIV.swipe
     +e.DIV.container
-      +b.swipe-item
-        +e.DIV.icon.active
-        |Главная страница
+    
+      +b.swipe-item.active
+        +e.DIV.icon
+        +e.A.text(href="#") Главная страница
+        
       +b.swipe-item
         +e.DIV.icon
-        |Hot news
+        +e.A.text Hot news
+        
       +b.swipe-item
         +e.DIV.icon
-        |About me
+        +e.A.text About me
+        
       +b.swipe-item
         +e.DIV.icon
-        |Документы
+        +e.A.text Документы
+        
+      +b.swipe-item
+        +e.DIV.icon
+        +e.A.text Контакты
 
-      +b.swipe-item
-        +e.DIV.icon
-        |Контакты
+
+        //- mixin swipe()
+        //-   +b.DIV.swipe
+        //-     +e.DIV.container
+        //-       +b.swipe-item
+        //-         +e.DIV.icon.active
+        //-         |Главная страница
+        //-       +b.swipe-item
+        //-         +e.DIV.icon
+        //-         |Hot news
+        //-       +b.swipe-item
+        //-         +e.DIV.icon
+        //-         |About me
+        //-       +b.swipe-item
+        //-         +e.DIV.icon
+        //-         |Документы
+        //- 
+        //-       +b.swipe-item
+        //-         +e.DIV.icon
+        //-         |Контакты

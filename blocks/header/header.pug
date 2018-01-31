@@ -1,21 +1,30 @@
 include ../gamburger/gamburger.pug
 include ../swipe/swipe.pug
 include ../social/social.pug
+include ../swipeCount/swipeCount.pug
+include ../logo/logo.pug
 
 mixin header()
   +b.DIV.header
-    .container-fluid
-      .row
+    +e.DIV.container-fluid
+      
+      +e.DIV.row
         +e.DIV.gamburger
           block gamburger
             +gamburger()
         +e.DIV.social
           block social
             +social()
-      .row
-        +e.DIV.gamburger
-          block gamburger
-            +gamburger()
+      +e.DIV.row(class="logoCenter")
+        +e.DIV.logo
+          block logo
+            +logo()
+      +e.DIV.row
         +e.DIV.swipe
           block swipe
             +swipe()
+        +e.DIV.swipeCount
+          block swipeCount
+            +swipeCount()
+      
+      

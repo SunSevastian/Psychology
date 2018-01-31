@@ -1,0 +1,31 @@
+.swipeCount
+  &-item
+    color: $main-color-header
+    // &__text.all
+    //   font-family: 'Proxima Nova Th'
+    //   font-size: 48px
+    &__text.active
+      margin-bottom: 0
+      font-size: 130px
+      font-family: 'Proxima Nova Rg'
+      font-weight: bold
+      font-style: normal
+      position: relative
+      left: -25px
+      &::before
+        content: '5'
+        font-family: 'Proxima Nova Th'
+        font-size: 38px
+        top: -10%
+        left: 80%
+        position: absolute
+      &::after
+        content: ''
+        display: block
+        width: 60px
+        height: 2px
+        background: $main-color-header
+        position: absolute
+        top: 15%
+        left: 15%
+        transform: rotate(45deg)
